@@ -1,0 +1,24 @@
+*자주 조회하는 컬럼은 위에 배치한다.
+*테이블에 컬럼이 많으면 좋지 않다.
+*컬럼 데이터에 null이 많으면 테이블을 다시 설계해보자
+*update -> delete + insert
+
+DML(SELECT, INSERT, UPDATE, DELETE)
+DDL(Create, Drop, Alter) CREATE TABLE -> 물리적 설계
+
+서비스 규모가 커지면
+SELECT만 할 수 있는 SLAVE DB
+UPDATE, INSERT, DELETE만 할 수 있는 MASTER DB로 분리한다.
+
+ERwin -> 데이터베이스 테이블 모델링 프로그램
+ERwin -> 논리적 설계
+
+1:1 (One to One)
+ex) 군인 <-> 총기, 사람 <-> 민증, 결혼
+1:N (One to Many)
+ex) emp <-> dept (한 부서에 여러명의 사원이 일함)
+    축구팀 <-> 축구선수
+    롤팀 <-> 롤선수
+N:N (Many to Many)
+ex) 과목 <-> 수강신청 <-> 교수
+    재료 <-> 요리사 <-> 요리
